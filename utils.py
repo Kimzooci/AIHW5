@@ -14,7 +14,7 @@ def get_config():
 
     with open(config_dir.format('config.yaml'), "r") as f:
         try:
-            config = yaml.load(f)
+            config = yaml.load(f, Loader=yaml.FullLoader)
         except yaml.YAMLError as exc:
             assert False, "default.yaml error: {}".format(exc)
 
