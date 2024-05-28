@@ -1,0 +1,19 @@
+# --- DQN specific parameters ---
+EPISODES: 100
+USE_TARGET_NET: True
+EPS_START: 0.9
+EPS_END: 0.05
+EPS_DECAY: 200
+GAMMA: 0.8
+LR: 0.001
+BUFFER_SIZE: 1000
+RENDER: True
+
+# --- HomeWork ---
+HIDDEN_LAYER_NODES: [128, 256, 512]
+BATCH_SIZE: [16, 32, 64]
+TARGET_UPDATE: [100, 200, 300]
+
+# result save - neurons, batch_size, target_update
+RESULT_SAVE: neurons
+
